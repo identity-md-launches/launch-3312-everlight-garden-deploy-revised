@@ -1,0 +1,81 @@
+{
+  "baselineCommit": "f3ae2915b2fc99c56079da2fc9addef2e94397e0",
+  "baselinePath": "docs/evidence/bridge-dependencies.json",
+  "observedAt": "2026-11-16T11:00:24.893232+00:00",
+  "sourceVerification": [
+    {
+      "name": "base",
+      "chainId": 8453,
+      "address": "0xFF0C532FDB8Cd566Ae169C1CB157ff2Bdc83E105",
+      "sourcify": "https://sourcify.dev/server/v2/contract/8453/0xFF0C532FDB8Cd566Ae169C1CB157ff2Bdc83E105?fields=all",
+      "matchId": "11936",
+      "runtimeMatch": "match",
+      "sourceContract": "src/FrenPetToken.sol:FrenPetToken",
+      "runtimeHash": "0x15021fda4613ae853a7e3199f62df75e6f547ca11d32df53c0b1616f4a80ef4f",
+      "runtimeSize": 12331,
+      "immutableValues": {
+        "immutables": {
+          "2080": "0x000000000000000000000000327df1e6de05895d2ab08513aadd9313fe505d86",
+          "2082": "0x00000000000000000000000029b3a7869e3662d00aabd89a8ee74b2f703a6a66"
+        },
+        "cborAuxdata": {
+          "1": "0xa26469706673582212200a43e7930d559ad951d357dadc8440c5db9acd98388c340a57f72cdcbba7379c64736f6c63430008130033"
+        }
+      },
+      "liveRuntimeMatchesVerified": true
+    },
+    {
+      "name": "adapter",
+      "chainId": 8453,
+      "address": "0xab152db8aac047b6757ffcf495ffe88d7712690a",
+      "sourcify": "https://sourcify.dev/server/v2/contract/8453/0xab152db8aac047b6757ffcf495ffe88d7712690a?fields=all",
+      "matchId": "9956351",
+      "runtimeMatch": "exact_match",
+      "sourceContract": "src/FrenPetOFTAdapter.sol:FrenPetOFTAdapter",
+      "runtimeHash": "0x1ad0c62178c048836ae25bc3c56a69579ae1ac8498209281c36acd344063e4da",
+      "runtimeSize": 17717,
+      "immutableValues": {
+        "immutables": {
+          "1386": "0x0000000000000000000000001a44076050125825900e736c501f859c50fe728c",
+          "2631": "0x000000000000000000000000ff0c532fdb8cd566ae169c1cb157ff2bdc83e105",
+          "2783": "0x000000000000000000000000000000000000000000000000000000e8d4a51000"
+        }
+      },
+      "liveRuntimeMatchesVerified": true
+    },
+    {
+      "name": "ethereum",
+      "chainId": 1,
+      "address": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+      "sourcify": "https://sourcify.dev/server/v2/contract/1/0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7?fields=all",
+      "matchId": "27277375",
+      "runtimeMatch": "exact_match",
+      "sourceContract": "src/BridgedFP.sol:BridgedFP",
+      "runtimeHash": "0x79a1ae149d27d4aae006d4dd75cb834222c9623799bbf34359428aaf66fec3bf",
+      "runtimeSize": 22990,
+      "immutableValues": {
+        "immutables": {
+          "1386": "0x0000000000000000000000001a44076050125825900e736c501f859c50fe728c",
+          "2778": "0x000000000000000000000000000000000000000000000000000000e8d4a51000"
+        }
+      }
+    }
+  ],
+  "deterministicDeployerReadAt": "2026-11-16T12:37:17.529072+00:00",
+  "baseDeterministicDeployer": {
+    "rpc": "https://base-rpc.publicnode.com",
+    "blockTag": "latest",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getCode",
+      "params": [
+        "0x4e59b44847b379578588920ca78fbf26c0b4956c",
+        "latest"
+      ]
+    },
+    "result": "0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe03601600081602082378035828234f58015156039578182fd5b8082525050506014600cf3",
+    "runtimeKeccak256": "0x2fa86add0aed31f33a762c9d88e807c475bd51d0f52bd0955754b2608f7e4989",
+    "note": "Canonical deterministic-deployment proxy; calldata is salt followed by init code. The pinned receiver address assumes this deployer."
+  }
+}

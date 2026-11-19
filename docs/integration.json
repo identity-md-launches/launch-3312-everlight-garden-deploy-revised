@@ -1,0 +1,31 @@
+{
+  "name": "Everlight Garden",
+  "status": "pending deployment",
+  "purchasesEnabled": false,
+  "ethereum": {
+    "chainId": 1,
+    "garden": null,
+    "abi": "docs/abi/WishGarden.json",
+    "imd": "0xD34a99Bc0f67aE1bbd63C660e6d0b0dd03E263B7",
+    "decimals": 18
+  },
+  "base": {
+    "chainId": 8453,
+    "receiver": null,
+    "abi": "docs/base/EverlightBurnReceiver.json",
+    "imd": "0xFF0C532FDB8Cd566Ae169C1CB157ff2Bdc83E105"
+  },
+  "candle": {
+    "priceBaseUnits": "1000000000000000000",
+    "minBatch": 1,
+    "maxBatch": 50,
+    "styles": ["Purity", "Hope", "Love", "Success", "Health", "Wealth", "Happiness"],
+    "maxWishCodepoints": 280,
+    "maxWishBytes": 1120
+  },
+  "allocationBps": {"burn": 3000, "earlierCandles": 6000, "ecosystem": 0, "operations": 500, "founder": 500},
+  "firstCandleBps": {"burn": 9000, "earlierCandles": 0, "ecosystem": 0, "operations": 500, "founder": 500},
+  "actualBurnedOnBase": "totalBurned()",
+  "acknowledgedOnEthereum": "confirmedBurn()",
+  "disclosure": "Rewards come from subsequent candle purchases. Without new purchases, no new purchase-funded rewards accrue."
+}

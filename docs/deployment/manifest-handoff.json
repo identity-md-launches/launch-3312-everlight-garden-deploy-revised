@@ -1,0 +1,43 @@
+{
+  "kind": "evm_contracts",
+  "chainId": 1,
+  "baselineCommit": "f3ae2915b2fc99c56079da2fc9addef2e94397e0",
+  "status": "pending launch service review, publication, Ethereum deployment and verification",
+  "build": {
+    "solc": "0.8.26+commit.8a97fa7a",
+    "evmVersion": "cancun",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "viaIR": false,
+    "bytecodeHash": "none"
+  },
+  "applications": [
+    {
+      "contract": "WishGarden",
+      "source": "src/WishGarden.sol",
+      "abi": "docs/abi/WishGarden.json",
+      "constructorTypes": [
+        "address"
+      ],
+      "constructorArgs": [
+        "0x48E4E74fE1d0c14404cEB57B9fec5b21329C6ec9"
+      ],
+      "encodedArgs": "0x00000000000000000000000048e4e74fe1d0c14404ceb57b9fec5b21329c6ec9",
+      "valueWei": "0",
+      "creationBytecodeKeccak256": "0x792afe6dde43711d4ad25e9e6ff72fd6643d901e618c1a1c165edfc470690fe6",
+      "initCodeKeccak256": "0xafec29d518d8622b09ae794bdf6249fef523cccff412d00fd3345925239c8eb3",
+      "factory": null,
+      "create2Salt": null,
+      "expectedAddress": null,
+      "deploymentInputsFrom": "accepted launch manifest and launch service",
+      "initialState": {
+        "activated": false,
+        "purchasesPaused": true
+      }
+    }
+  ],
+  "baseOwnerDeployment": "docs/base/deployment-package.json",
+  "setup": "docs/deployment.md"
+}
