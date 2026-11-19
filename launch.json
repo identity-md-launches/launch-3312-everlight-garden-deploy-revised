@@ -1,0 +1,10 @@
+{
+  "kind": "evm_contracts",
+  "contracts": [
+    {
+      "contract": "WishGarden",
+      "constructorArgs": ["$owner"]
+    }
+  ],
+  "notes": "WishGarden deploys on Ethereum (chain 1) with purchases closed. Each paid candle costs 1 IMD. The fixed allocation is 30% to the burn queue, 60% shared equally among all earlier paid candles, 0% to ecosystem, 5% to operations and 5% to founder. The first candle queues 90% for burn and credits 5% each to operations and founder. Rewards come from subsequent purchases. Without new purchases, no new purchase-funded rewards accrue. Base deployment (chain 8453) is pending owner execution. Use the initial owner and the new Ethereum garden address as the EverlightBurnReceiver constructor arguments, in that order. Verify its CREATE2 address against pinnedBaseReceiver() and its ethereumGarden() against the new garden. Follow docs/deployment.md for cutover checks and bridge readiness. The owner activates Ethereum purchases separately. The receiver records actual Base burns in totalBurned(), and the garden records acknowledged burns in confirmedBurn()."
+}
